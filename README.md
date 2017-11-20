@@ -6,7 +6,7 @@ css(estilo) y javascript (funcionalidad y eventos).
 
 Presentación de Inicio
 ----------------------
-![Inicio](assets/1.jpg)
+![Inicio](assets/images/1.jpg)
 
 **Versión 0.0.1**
 Se mostrará el texto "Añadir una lista ...".
