@@ -17,6 +17,7 @@ div.container-header {
   overflow: hidden;
 }
 
+
 .divisors {
   float: left;
 }
@@ -32,16 +33,64 @@ div.logo {
   border: 0px;
 }
 
+#container-1 {
+  height: 55px;
+  width: 280px;
+}
+
+#container-targets {
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* definir atributos iniciales de div container */
+div.container-initial {
+  height: 55px;
+  width: 280px;
+  background-color: #2979FF  ;
+  display: inline-block;
+}
+/* definir atributos cambiante de div container */
+div.container-after {
+  margin-top: 5px;
+  margin-left: 5px;
+  height: 55px;
+  width: 280px;
+  display: inline-block;
+  float: left;
+  background-color: #E0F2F1 ;
+}
 
 .letterWhite {
   color: white;
 }
 
+
+}
 /* definir atributos iniciales de textarea-1 */
+#textarea-1 {
+  height: 20px;
+  background-color: #01579B;
+}
+
+/* definir atributos cambiante de textarea-1 */
+.textarea-2 {
+  height: 20px;
+  background-color: #01579B;
+}
+
 .textarea-1 {
   height: 20px;
   background-color: #01579B;
 }
 
-/* definir color del atributo placeholder */
-::placeholder { color: white; }
+/* definir color del atributo placeholder inicial*/
+::placeholder {
+  color: black; }
+
+#button-initial {
+  background-color: #8BC34A ;
+  color: white;
+  height:  30px;
+  width: 60px;
+}
