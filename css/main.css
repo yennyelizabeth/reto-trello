@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+    background-color: #2979FF ;
+}
+
+header {
+    background-color: #01579B;
+    height: 40px;
+}
+
+div.container-header {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.divisors {
+  float: left;
+}
+
+h3 {
+  color: white;
+}
+
+div.logo {
+  margin: 0px;
+  padding: 0px;
+  height: 30px;
+  border: 0px;
+}
+
+
+.letterWhite {
+  color: white;
+}
+
+/* definir atributos iniciales de textarea-1 */
+.textarea-1 {
+  height: 20px;
+  background-color: #01579B;
+}
+
+/* definir color del atributo placeholder */
+::placeholder { color: white; }
