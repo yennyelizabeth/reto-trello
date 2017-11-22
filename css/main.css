@@ -1,96 +1,70 @@
+/* reglas generales */
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-
-body {
-    background-color: #2979FF ;
-}
-
+/* header */
 header {
-    background-color: #01579B;
-    height: 40px;
+  position: fixed;
+  background-color: #0067A3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
 }
 
-div.container-header {
-  display: inline-block;
-  overflow: hidden;
+.text-align-center {
+  text-align: center;
 }
 
+.logo {
+  line-height: 4.5;
+}
 
-.divisors {
+.container {
+  padding-top: 60px;
+}
+
+.container-form {
+  font-family: 'Lobster Two', cursive;
   float: left;
+  padding-top: 10px;
+  margin-left: 10px;
+  width: 240px;
 }
 
-h3 {
-  color: white;
+.container-form form {
+  background-color: #E2E4E6;
 }
 
-div.logo {
-  margin: 0px;
-  padding: 0px;
-  height: 30px;
-  border: 0px;
+#name-list {
+  font-family: 'Lobster Two', cursive;
+  padding: 10px;
+  display: block;
+  color: #fff;
+  background-color: #D4D6D8;
+  border-style: none;
 }
 
-#container-1 {
-  height: 55px;
-  width: 280px;
+.container-form span {
+  background-color: #4C94BF;
+  padding: 10px;
 }
 
-#container-targets {
-  overflow: hidden;
-  display: inline-block;
+.container-form span:hover {
+  background-color: #0067a3;
+  cursor: pointer;
 }
 
-/* definir atributos iniciales de div container */
-div.container-initial {
-  height: 55px;
-  width: 280px;
-  background-color: #2979FF  ;
-  display: inline-block;
-}
-/* definir atributos cambiante de div container */
-div.container-after {
-  margin-top: 5px;
-  margin-left: 5px;
-  height: 55px;
-  width: 280px;
-  display: inline-block;
-  float: left;
-  background-color: #E0F2F1 ;
+.display-none {
+  display: none;
 }
 
-.letterWhite {
-  color: white;
-}
-
-
-}
-/* definir atributos iniciales de textarea-1 */
-#textarea-1 {
-  height: 20px;
-  background-color: #01579B;
-}
-
-/* definir atributos cambiante de textarea-1 */
-.textarea-2 {
-  height: 20px;
-  background-color: #01579B;
-}
-
-.textarea-1 {
-  height: 20px;
-  background-color: #01579B;
-}
-
-/* definir color del atributo placeholder inicial*/
-::placeholder {
-  color: black; }
-
-#button-initial {
-  background-color: #8BC34A ;
-  color: white;
-  height:  30px;
-  width: 60px;
+#button-id {
+  border: 0;
+  padding: 5px;
+  background-color: #5EB64B;
+  color: #fff;
 }

@@ -1,37 +1,19 @@
-window.addEventListener('load', function(event) {
-  var button = document.getElementById('button-initial');
-  button.style.visibility = 'hidden';
+/* registro de evento Load en window, el cual llama a función begin */
+window.addEventListener('load', begin);
 
-  var textarea = document.getElementById('textarea-1');
+/* Declaración de variables globales que capturan los elementos a utilizar */
+var form = document.getElementById('form'); /* Form */
+var nameList = document.getElementById('name-list'); /* Input */
+var button = document.getElementById('button-id'); /* Input */
+var addList = document.getElementById('addList'); /* Span */
 
-  /* Evento click en textarea */
-  textarea.addEventListener('click', function(event) {
-    button.style.visibility = 'visible';
+/* función begin, donde se registraran: eventos y sus funciones asociadas */
+function begin() {
+  addList.addEventListener('click', createList); /* evento click -> llama función createList */
+};
 
-    var containerOne = document.getElementById('container-1');
-
-    containerOne.classList.remove('container-initial');
-    containerOne.classList.add('container-after');
-  });
-
-  /* Evento click en boton */
-  button.addEventListener('click', function(event) {
-    alert('presion');
-    /* ubico área para crear elementos */
-    var sectionTargets = document.getElementById('sectionTargets');
-
-    /* creaación de elementos y nodo */
-    var divVar = document.createElement('div');
-    var textAreaVar = document.createElement('textarea');
-    /* var text = document.createTextNode(textAreaText); */
-
-    /* asignación de hijos a padres */
-    sectionTargets.appendChild(divVar);
-    divVar.appendChild(textAreaVar);
-    /* sectionTargetss.appendChild(text);*/
-
-    divVar.classList.add('container-after');
-    textAreaVar.value = 'añadir una lista...';
-    textAreaVar.classList.remove('textarea-1');
-  });
-});
+/* función createList que  */
+function createList(event) {
+  event.target.classList.toggle('display-none'); /* con toggle agrega la clase que no tenía - oculta span */
+  form.classList.toggle('display-none'); /* con toggle quita la clase que ya tenia form inicialmente - aparece form */
+};
